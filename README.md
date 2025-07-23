@@ -23,8 +23,8 @@ Sentinel is an AI-driven testing platform that automatically generates, executes
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-org/sentinel.git
-   cd sentinel
+   git clone https://github.com/sergiomasellis/Sentinel.git
+   cd Sentinel
    ```
 
 2. Copy environment variables:
@@ -55,6 +55,8 @@ Sentinel is an AI-driven testing platform that automatically generates, executes
 
 The backend will be available at http://localhost:8000 and the frontend at http://localhost:5173.
 
+See the [Architecture](#architecture) section below for more details on how Sentinel works.
+
 ## Architecture
 
 Sentinel follows an event-driven architecture:
@@ -68,7 +70,7 @@ Sentinel follows an event-driven architecture:
 
 ## Development
 
-See [CLAUDE.md](CLAUDE.md) for detailed development instructions and project structure.
+See [CLAUDE.md](./CLAUDE.md) for detailed development instructions and project structure.
 
 ### Running Tests
 
@@ -83,6 +85,16 @@ make lint
 make format
 ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
-MIT
+This project is licensed under the MIT License.

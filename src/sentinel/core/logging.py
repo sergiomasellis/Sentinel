@@ -7,7 +7,7 @@ from structlog.stdlib import add_logger_name
 
 def configure_logging(debug: bool = False) -> None:
     """Configure structured logging with structlog"""
-    
+
     processors = [
         add_log_level,
         add_logger_name,
@@ -16,15 +16,12 @@ def configure_logging(debug: bool = False) -> None:
         structlog.processors.format_exc_info,
         structlog.processors.UnicodeDecoder(),
     ]
-    
+
     if debug:
         processors.append(structlog.dev.ConsoleRenderer())
     else:
-        processors.extend([
-            dict_tracebacks,
-            JSONRenderer()
-        ])
-    
+        processors.extend([dict_tracebacks, JSONRenderer()])
+
     structlog.configure(
         processors=processors,
         context_class=dict,

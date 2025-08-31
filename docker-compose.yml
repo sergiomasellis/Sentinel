@@ -31,7 +31,7 @@ services:
       - postgres
     volumes:
       - .:/app
-    command: python run_dev.py
+    command: uv run python run_dev.py
 
 volumes:
   redis_data:

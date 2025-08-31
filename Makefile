@@ -13,6 +13,8 @@ help:
 
 install:
 	uv sync --dev
+	uv pip install ruff
+	uv pip install black
 
 dev:
 	uv run python run_dev.py
@@ -25,7 +27,7 @@ lint:
 	uv run mypy src/
 
 format:
-	uv run black src/ tests/
+	uv run python -m black src/ tests/
 	uv run isort src/ tests/
 	uv run ruff check --fix src/ tests/
 

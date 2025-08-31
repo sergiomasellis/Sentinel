@@ -1,10 +1,11 @@
+black = "*"
+
 [project]
 name = "sentinel"
 version = "0.1.0"
 description = "AI-Driven Testing Platform"
 authors = [{name = "Sentinel Team", email = "team@sentinel.dev"}]
 requires-python = ">=3.12"
-readme = "README.md"
 license = {text = "MIT"}
 
 dependencies = [
